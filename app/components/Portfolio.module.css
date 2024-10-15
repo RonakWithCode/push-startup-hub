@@ -1,0 +1,35 @@
+/* Custom styles for the portfolio */
+.portfolioItem {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolioImageContainer {
+  height: 100%;
+  overflow: hidden;
+}
+
+.imageWrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.portfolioImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease;
+}
+
+.portfolioItem:hover .portfolioImageContainer {
+  overflow-y: auto;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.portfolioItem:hover .portfolioImageContainer::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

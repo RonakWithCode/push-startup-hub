@@ -25,3 +25,49 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.bg-gradient-radial {
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 100, 80, 0.4) 0%,
+    rgba(240, 87, 66, 0.3) 20%,
+    rgba(180, 50, 50, 0.2) 40%,
+    rgba(100, 20, 20, 0.1) 60%,
+    rgba(50, 10, 10, 0.05) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Add this to your existing global styles */
+body.no-scroll {
+  overflow: hidden;
+}
+
+.some-class {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.another-class {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.geist-sans {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+.geist-mono {
+  font-family: var(--font-geist-mono), monospace;
+}
