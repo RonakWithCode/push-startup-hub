@@ -385,7 +385,7 @@ export default function Services() {
             <PricingPlans />
           </section>
 
-          <section className="mt-24 bg-gray-800 rounded-lg p-8">
+          {/* <section className="mt-24 bg-gray-800 rounded-lg p-8">
             <h2 className="text-3xl font-bold mb-6 text-center">Our Clients in India</h2>
             <div className="flex flex-wrap justify-center items-center gap-8">
               {[1, 2, 3, 4, 5, 6].map((num) => (
@@ -399,7 +399,7 @@ export default function Services() {
                 />
               ))}
             </div>
-          </section>
+          </section> */}
 
           <div className="mt-24 text-center">
             <h2 className="text-3xl font-semibold mb-6">Ready to Elevate Your Digital Presence in India?</h2>
