@@ -12,6 +12,7 @@ const WhyChooseUs = dynamic(() => import('./components/WhyChooseUs'));
 const Portfolio = dynamic(() => import('./components/Portfolio'));
 const Contact = dynamic(() => import('./components/Contact'));
 const CTA = dynamic(() => import('./components/CTA'));
+const ExploreGuides = dynamic(() => import('./components/ExploreGuides.js'));
 
 // Placeholder components for lazy-loaded sections
 const PlaceholderComponent = () => <div className="h-96 bg-gray-100 animate-pulse"></div>;
@@ -57,6 +58,9 @@ export default function Home() {
         </Suspense>
         <Suspense fallback={<PlaceholderComponent />}>
           <Portfolio />
+        </Suspense>
+        <Suspense fallback={<PlaceholderComponent />}>
+          <ExploreGuides />
         </Suspense>
         <Suspense fallback={<PlaceholderComponent />}>
           <Contact />
