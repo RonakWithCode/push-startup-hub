@@ -14,7 +14,7 @@ export default function WhatWeAre() {
         <div className="grid md:grid-cols-3 gap-8">
           {traits.map((trait, index) => (
             <article key={index} className="flex flex-col items-center text-center">
-              <Image src={trait.icon} alt={trait.title} width={64} height={64} className="mb-4" />
+                <Image src={trait.icon} alt={trait.title} width={64} height={64} className="mb-4" />
               <h3 className="text-xl font-semibold mb-2 text-blue-400">{trait.title}</h3>
               <p className="text-gray-300">{trait.description}</p>
             </article>

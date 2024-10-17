@@ -40,7 +40,8 @@ const Navbar = () => {
   const navLinks = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Us' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/contact', label: 'Contact' },
+    { href: '/services', label: 'Sservice' },
   ];
 
   const serviceLinks = [

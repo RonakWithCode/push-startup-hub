@@ -1,0 +1,17 @@
+.animatedSvg {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+.animatedPath {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
