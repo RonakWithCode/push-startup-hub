@@ -44,12 +44,6 @@ const Navbar = () => {
     { href: '/services', label: 'Sservice' },
   ];
 
-  const serviceLinks = [
-    { href: '/mobile-app', label: 'Mobile App Development' },
-    { href: '/website', label: 'Website Development' },
-    { href: '/web-design', label: 'Web Design Services' },
-    { href: '/seo', label: 'SEO Optimization' },
-  ];
 
   const isActive = (href) => pathname === href;
 
@@ -72,31 +66,7 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="relative group">
-              <button
-                onClick={toggleDesktopServices}
-                className={`text-white hover:text-blue-400 transition duration-300 ${
-                  serviceLinks.some(link => isActive(link.href)) ? 'text-blue-400' : ''
-                }`}
-                aria-expanded={desktopServicesOpen}
-              >
-                Services
-              </button>
-              <ul className="absolute left-0 mt-2 w-56 bg-gray-900 rounded-md shadow-lg transition-all duration-300 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                {serviceLinks.map((service) => (
-                  <li key={service.href}>
-                    <Link 
-                      href={service.href} 
-                      className={`block px-4 py-2 text-sm ${
-                        isActive(service.href) ? 'text-blue-400 bg-gray-800' : 'text-white hover:bg-gray-800 hover:text-blue-400'
-                      } transition duration-300`}
-                    >
-                      {service.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+        
           </div>
           <Link href="#contact" className="hidden lg:block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-2 px-6 rounded-full text-sm transition duration-300 transform hover:scale-105">
             Get Started
@@ -129,36 +99,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <button 
-                onClick={toggleServices}
-                className={`w-full text-left flex justify-between items-center text-white hover:text-blue-400 transition duration-300 py-2 ${
-                  serviceLinks.some(link => isActive(link.href)) ? 'text-blue-400' : ''
-                }`}
-                aria-expanded={servicesOpen}
-              >
-                Services
-                <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transform transition-transform duration-300 ${servicesOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              <ul className={`pl-4 mt-2 space-y-2 overflow-hidden transition-all duration-300 ease-in-out ${
-                servicesOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-              }`}>
-                {serviceLinks.map((service) => (
-                  <li key={service.href}>
-                    <Link 
-                      href={service.href} 
-                      className={`block text-white hover:text-blue-400 transition duration-300 py-1 ${
-                        isActive(service.href) ? 'text-blue-400' : ''
-                      }`}
-                    >
-                      {service.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
+       
           </ul>
           <Link href="#contact" className="mt-4 block w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-2 px-6 rounded-full text-center transition duration-300 transform hover:scale-105">
             Get Started

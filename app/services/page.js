@@ -1,8 +1,7 @@
 "use client"
 import { useState } from 'react';
-import { NextSeo } from 'next-seo';
 import { FaCode, FaMobileAlt, FaSearch, FaPalette, FaRocket, FaChartLine, FaLaptopCode, FaServer, FaShieldAlt, FaCloudUploadAlt, FaRobot, FaBullhorn, FaCheckCircle, FaRupeeSign } from 'react-icons/fa';
-import Image from 'next/image';
+
 import Link from 'next/link';
 
 const services = [
@@ -330,24 +329,7 @@ export default function Services() {
 
   return (
     <>
-      <NextSeo
-        title="Our Services | Push Start-Up Hub - Comprehensive Digital Solutions"
-        description="Discover our full range of digital services including web & mobile development, SEO, UI/UX design, digital marketing, analytics, and more. Tailored for the Indian market."
-        canonical="https://www.pushstartuphub.com/services"
-        openGraph={{
-          url: 'https://www.pushstartuphub.com/services',
-          title: 'Our Services | Push Start-Up Hub - Empowering Digital Growth in India',
-          description: "Explore our full suite of digital services designed to propel your business forward in the Indian market. From web development to AI solutions, we've got you covered.",
-          images: [
-            {
-              url: 'https://www.pushstartuphub.com/images/services-og.jpg',
-              width: 1200,
-              height: 630,
-              alt: 'Push Start-Up Hub Services',
-            },
-          ],
-        }}
-      />
+     
 
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
