@@ -10,10 +10,10 @@ export default function Hero() {
           Ignite Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Digital Transformation</span>
         </h1>
         <h2 className="font-poppins text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-6 sm:mb-8 text-gray-300 tracking-wide">
-          Innovative Web Solutions for Forward-Thinking Businesses
+          Innovative Web Solutions and AI-Powered Startup Tools
         </h2>
         <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 max-w-3xl mx-auto text-gray-400 leading-relaxed">
-          At PushStartupHub, we craft bespoke digital experiences that propel your business into the future. Our expert team delivers cutting-edge web development, intuitive app creation, and data-driven marketing strategies.
+          At PushStartupHub, we craft bespoke digital experiences and provide AI-powered tools to propel your business into the future. From web development to startup assistance, we&apos;ve got you covered with name generation, business planning, branding, and more.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
           <Link href="#contact" className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
@@ -21,6 +21,9 @@ export default function Hero() {
           </Link>
           <Link href="#services" className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-black font-bold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg">
             Explore Services
+          </Link>
+          <Link href="/ai-tools" className="w-full sm:w-auto bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+            Try AI Tools
           </Link>
         </div>
       </div>
