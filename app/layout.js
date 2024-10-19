@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from 'next/script';
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -33,23 +32,30 @@ const poppins = Poppins({
   display: 'swap',
 });
 
-
-
-// ... (font configurations remain the same)
-
 export const metadata = {
-  title: "Push Startup Hub | Expert Web, App & SEO Solutions for Businesses",
+  metadataBase: new URL('https://push-startup-hub.vercel.app'),
+  title: {
+    default: "Push Startup Hub | Expert Web, App & SEO Solutions for Businesses",
+    template: "%s | Push Startup Hub"
+  },
   description: "Push Startup Hub delivers cutting-edge web development, app creation, and guaranteed SEO services to propel your business to the top of search results.",
-  keywords: "web development, mobile app development, SEO services, digital marketing, startup solutions, online business growth",
-  authors: [{ name: "Push Startup Hub", url: "https://pushstartuphub.com" }],
+  keywords: ["web development", "mobile app development", "SEO services", "digital marketing", "startup solutions", "online business growth"],
+  authors: [{ name: "Push Startup Hub", url: "https://push-startup-hub.vercel.app" }],
+  creator: "Push Startup Hub",
+  publisher: "Push Startup Hub",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
     title: "Push Startup Hub - Innovative Digital Solutions for Business Growth",
     description: "Expert web development, app creation, and 100% effective SEO strategies to skyrocket your online presence.",
-    url: "https://pushstartuphub.com",
+    url: "https://push-startup-hub.vercel.app",
     siteName: "Push Startup Hub",
     images: [
       {
-        url: "https://pushstartuphub.com/og-image.jpg",
+        url: "https://push-startup-hub.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Push Startup Hub - Digital Solutions",
@@ -63,7 +69,7 @@ export const metadata = {
     site: '@push_startup',
     title: "Push Startup Hub - Innovative Digital Solutions",
     description: "Expert web development, app creation, and 100% effective SEO strategies to skyrocket your online presence.",
-    images: ['https://pushstartuphub.com/twitter-image.jpg'],
+    images: ['https://push-startup-hub.vercel.app/twitter-image.jpg'],
   },
   robots: {
     index: true,
@@ -76,11 +82,16 @@ export const metadata = {
       'max-snippet': -1,
     },
   },
-  canonical: 'https://pushstartuphub.com',
   alternates: {
+    canonical: 'https://push-startup-hub.vercel.app',
     types: {
-      'application/rss+xml': 'https://pushstartuphub.com/feed.xml',
+      'application/rss+xml': 'https://push-startup-hub.vercel.app/feed.xml',
     },
+  },
+  verification: {
+    google: 'google720f8aece68151fd',
+    yandex: 'yandex_verification_code',
+    bing: 'msvalidate.01_verification_code',
   },
 };
 
@@ -90,6 +101,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Script id="schema-org" type="application/ld+json">
           {`
@@ -97,8 +109,8 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Push Startup Hub",
-              "url": "https://pushstartuphub.com",
-              "logo": "https://pushstartuphub.com/logo.png",
+              "url": "https://push-startup-hub.vercel.app",
+              "logo": "https://push-startup-hub.vercel.app/logo.png",
               "sameAs": [
                 "https://www.instagram.com/push.startup/",
                 "https://x.com/push_startup"

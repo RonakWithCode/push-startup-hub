@@ -5,7 +5,7 @@ function getGuides() {
   const guideFiles = fs.readdirSync(path.join(process.cwd(), 'app/guides/content'));
   return guideFiles.map(filename => ({
     slug: filename.replace('.md', ''),
-    lastModified: new Date(),
+    lastModified: new Date().toISOString(),
   }));
 }
 
@@ -17,9 +17,11 @@ export default function sitemap() {
     '/about',
     '/contact',
     '/services',
+    '/ai-tools',
+    '/guides',
   ].map(route => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date().toISOString(),
   }));
 
   const guides = getGuides().map(guide => ({
