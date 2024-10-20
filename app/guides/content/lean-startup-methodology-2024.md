@@ -153,6 +153,6 @@ The Lean Startup methodology continues to be a powerful framework for building s
 
 Remember, the key to success with Lean Startup is maintaining a mindset of continuous learning and adaptation. Embrace uncertainty, stay close to your customers, and always be ready to evolve based on new data and insights.
 
-At Push Startup Hub, we're committed to helping startups apply Lean principles effectively in the modern business environment. Whether you're just starting out or looking to optimize your existing processes, we're here to support your Lean Startup journey.
+At Ronosoft, we're committed to helping startups apply Lean principles effectively in the modern business environment. Whether you're just starting out or looking to optimize your existing processes, we're here to support your Lean Startup journey.
 
 How are you applying Lean Startup principles in your venture? What challenges have you faced, and what innovative solutions have you discovered? Share your experiences in the comments below – your insights could be invaluable to fellow entrepreneurs on their Lean Startup journey!

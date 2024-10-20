@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   const { data: frontMatter } = matter(markdownWithMeta);
 
   return {
-    title: `${frontMatter.title} | Push Start-Up Hub`,
+    title: `${frontMatter.title} | Ronosoft`,
     description: frontMatter.description,
     openGraph: {
       title: frontMatter.title,

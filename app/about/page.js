@@ -69,7 +69,7 @@ const GrowthIllustration = () => (
       <svg className="w-24 h-24 mb-4 text-blue-400 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
       </svg>
-      <h3 className="text-3xl font-bold mb-2">Push Start-Up Hub</h3>
+      <h3 className="text-3xl font-bold mb-2">Ronosoft</h3>
       <p className="text-xl text-blue-300">Empowering Growth</p>
     </div>
     <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-900 to-transparent"></div>
@@ -132,7 +132,7 @@ export default function About() {
       ))}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse">
-          About Push Start-Up Hub
+          About Ronosoft
         </h1>
         
         <section className="mb-24 relative">
@@ -143,7 +143,7 @@ export default function About() {
             <div className="lg:w-1/2 lg:pl-12">
               <h2 className="text-3xl sm:text-4xl font-semibold mb-6 text-blue-400">Our Story</h2>
               <p className="text-lg sm:text-xl mb-4 animate-fade-in">
-                Push Start-Up Hub was born from a vision to revolutionize the Indian startup ecosystem. We recognized a critical gap: many new startups in India struggle to establish their online presence due to limited budgets and technical expertise. Our mission is to empower these startups with high-quality digital services at competitive prices, supported by 24/7 assistance.
+                Ronosoft was born from a vision to revolutionize the Indian startup ecosystem. We recognized a critical gap: many new startups in India struggle to establish their online presence due to limited budgets and technical expertise. Our mission is to empower these startups with high-quality digital services at competitive prices, supported by 24/7 assistance.
               </p>
               <p className="text-lg sm:text-xl mb-4 animate-fade-in">
                 Since our establishment, we&apos;ve successfully supported over 250 small businesses and early-stage startups, paving their way to become India&apos;s next unicorns.
@@ -177,7 +177,7 @@ export default function About() {
             <div className="lg:w-2/3">
               <h2 className="text-3xl sm:text-4xl font-semibold mb-4 text-blue-400">Our Founder&apos;s Vision</h2>
               <p className="text-lg sm:text-xl mb-4 animate-fade-in">
-                Our founder saw the challenges that new entrepreneurs face in a rapidly evolving digital landscape. With a mission to empower startup founders, Push Start-Up Hub aims to offer accessible solutions that meet their unique needs. We prioritize client satisfaction and strive to deliver exceptional service, ensuring that every startup can thrive online.
+                Our founder saw the challenges that new entrepreneurs face in a rapidly evolving digital landscape. With a mission to empower startup founders, Ronosoft aims to offer accessible solutions that meet their unique needs. We prioritize client satisfaction and strive to deliver exceptional service, ensuring that every startup can thrive online.
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function About() {
             <UnicornIcon />
           </div>
           <p className="text-lg sm:text-xl mb-4 max-w-3xl mx-auto animate-fade-in">
-            At Push Start-Up Hub, we&apos;re not just dreaming of unicorns – we&apos;re actively working to create them. Our goal is to foster an environment where Indian startups can flourish and reach billion-dollar valuations. We envision a future where India leads the world in innovation, nurturing multiple unicorns with our end-to-end solutions.
+            At Ronosoft, we&apos;re not just dreaming of unicorns – we&apos;re actively working to create them. Our goal is to foster an environment where Indian startups can flourish and reach billion-dollar valuations. We envision a future where India leads the world in innovation, nurturing multiple unicorns with our end-to-end solutions.
           </p>
         </section>
         

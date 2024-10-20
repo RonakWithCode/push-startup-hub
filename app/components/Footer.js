@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="space-y-4">
             <Link href="/" className="inline-block">
               <h3 className="text-2xl font-extrabold tracking-tight">
-                <span className="text-blue-300">Push</span>
-                <span className="text-white">StartUpHub</span>
+                <span className="text-white">Rono</span>
+                <span className="text-blue-300">soft</span>
               </h3>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed max-w-xs">
@@ -34,9 +34,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-yellow-300">Contact Us</h4>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>123 Startup Street, Tech City, 12345</p>
-              <p>Phone: <a href="tel:+11234567890" className="hover:text-yellow-300 transition duration-300">(123) 456-7890</a></p>
-              <p>Email: <a href="mailto:info@pushstartuphub.com" className="hover:text-yellow-300 transition duration-300">info@pushstartuphub.com</a></p>
+              {/* <p>123 Startup Street, Tech City, 12345</p> */}
+              <p>Phone: <a href="tel:+11234567890" className="hover:text-yellow-300 transition duration-300">7023941072</a></p>
+              <p>Email: <a href="mailto:into@ronosoft.com" className="hover:text-yellow-300 transition duration-300">into@ronosoft.com</a></p>
             </address>
             <div className="flex space-x-4 mt-6">
               {[
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-blue-800 text-center">
-          <p className="text-sm text-gray-300">&copy; {currentYear} PushStartUpHub. All rights reserved.</p>
+          <p className="text-sm text-gray-300">&copy; {currentYear} Ronosoft. All rights reserved.</p>
         </div>
       </div>
     </footer>

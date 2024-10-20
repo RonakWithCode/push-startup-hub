@@ -8,7 +8,7 @@ const SEOMetadata = ({ frontMatter, slug }) => {
   return (
     <>
       <NextSeo
-        title={`${title} | Push Start-Up Hub`}
+        title={`${title} | Ronosoft`}
         description={description}
         canonical={url}
         openGraph={{

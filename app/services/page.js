@@ -203,7 +203,7 @@ const ComparisonTable = () => (
       <thead>
         <tr className="bg-blue-900">
           <th className="p-3">Feature</th>
-          <th className="p-3">Push Start-Up Hub</th>
+          <th className="p-3">Ronosoft</th>
           <th className="p-3">Typical Agencies</th>
         </tr>
       </thead>
@@ -352,7 +352,7 @@ export default function Services() {
           </div>
 
           <section className="mt-24">
-            <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Push Start-Up Hub?</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">Why Choose Ronosoft?</h2>
             <ComparisonTable />
           </section>
 

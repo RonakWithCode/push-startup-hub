@@ -18,26 +18,26 @@ const ExploreGuides = dynamic(() => import('./components/ExploreGuides.js'));
 const PlaceholderComponent = () => <div className="h-96 bg-gray-100 animate-pulse"></div>;
 
 export const metadata = {
-  title: 'PushStartupHub - Web Solutions for Local Businesses',
-  description: 'PushStartupHub delivers cutting-edge web development, app creation, and digital marketing strategies to boost your local business\'s online success.',
+  title: 'Ronosoft - Web Solutions for Local Businesses',
+  description: 'Ronosoft delivers cutting-edge web development, app creation, and digital marketing strategies to boost your local business\'s online success.',
   keywords: 'web development, app creation, digital marketing, local business, online presence',
   openGraph: {
-    title: 'PushStartupHub - Web Solutions for Local Businesses',
-    description: 'Boost your local business\'s online success with PushStartupHub\'s web development, app creation, and digital marketing strategies.',
+    title: 'Ronosoft - Web Solutions for Local Businesses',
+    description: 'Boost your local business\'s online success with Ronosoft\'s web development, app creation, and digital marketing strategies.',
     images: [
       {
-        url: 'https://pushstartuphub.com/og-image.jpg',
+        url: 'https://Ronosoft.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'PushStartupHub',
+        alt: 'Ronosoft',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PushStartupHub - Web Solutions for Local Businesses',
-    description: 'Boost your local business\'s online success with PushStartupHub\'s web development, app creation, and digital marketing strategies.',
-    images: ['https://pushstartuphub.com/twitter-image.jpg'],
+    title: 'Ronosoft - Web Solutions for Local Businesses',
+    description: 'Boost your local business\'s online success with Ronosoft\'s web development, app creation, and digital marketing strategies.',
+    images: ['https://Ronosoft.com/twitter-image.jpg'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://pushstartuphub.com" />
+        <link rel="canonical" href="https://Ronosoft.com" />
       </Head>
       <div className="bg-black text-custom-white font-sans">
         <Hero />

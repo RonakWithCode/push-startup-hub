@@ -165,6 +165,6 @@ Pivoting is an art that combines strategic thinking, data analysis, and adaptabi
 
 Remember, a successful pivot isn't about completely abandoning your vision. It's about finding a better path to achieve that vision based on market realities and customer needs. Stay agile, keep listening to your customers, and don't be afraid to make bold moves when the data supports it.
 
-At Push Startup Hub, we've guided numerous startups through successful pivots. If you're considering a pivot or want to build more adaptability into your startup, we're here to help. Reach out to us for personalized guidance and support.
+At Ronosoft, we've guided numerous startups through successful pivots. If you're considering a pivot or want to build more adaptability into your startup, we're here to help. Reach out to us for personalized guidance and support.
 
 Have you experienced a pivot in your startup journey? What challenges did you face, and what lessons did you learn? Share your experiences in the comments below – your insights could be invaluable to fellow entrepreneurs navigating their own pivots!

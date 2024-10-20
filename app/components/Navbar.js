@@ -52,7 +52,7 @@ const Navbar = () => {
       <nav ref={navRef} className="container mx-auto px-4 py-4 lg:py-6" aria-label="Main navigation">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-white hover:text-blue-400 transition duration-300">
-            Push<span className="text-blue-400">StartUpHub</span>
+          <span className="text-blue-400">Rono</span>soft
           </Link>
           <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (

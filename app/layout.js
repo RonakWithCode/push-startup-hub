@@ -1,10 +1,11 @@
 import localFont from "next/font/local";
-import { Inter, Poppins } from 'next/font/google';
+import { Montserrat, Inter, Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Script from 'next/script';
 
+// Local fonts.
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -19,6 +20,7 @@ const geistMono = localFont({
   display: 'swap',
 });
 
+// Google fonts
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -32,33 +34,41 @@ const poppins = Poppins({
   display: 'swap',
 });
 
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  variable: '--font-montserrat',
+  display: 'swap',
+});
+
+// Metadata
 export const metadata = {
   metadataBase: new URL('https://push-startup-hub.vercel.app'),
   title: {
-    default: "Push Startup Hub | Expert Web, App & SEO Solutions for Businesses",
-    template: "%s | Push Startup Hub"
+
+    default: "Ronosoft | Expert Web, App & SEO Solutions for Businesses",
+    template: "%s | Ronosoft"
   },
-  description: "Push Startup Hub delivers cutting-edge web development, app creation, and guaranteed SEO services to propel your business to the top of search results.",
+  description: "Ronosoft delivers cutting-edge web development, app creation, and guaranteed SEO services to propel your business to the top of search results.",
   keywords: ["web development", "mobile app development", "SEO services", "digital marketing", "startup solutions", "online business growth"],
-  authors: [{ name: "Push Startup Hub", url: "https://push-startup-hub.vercel.app" }],
-  creator: "Push Startup Hub",
-  publisher: "Push Startup Hub",
+  authors: [{ name: "Ronosoft", url: "https://push-startup-hub.vercel.app" }],
+  creator: "Ronosoft",
+  publisher: "Ronosoft",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "Push Startup Hub - Innovative Digital Solutions for Business Growth",
+    title: "Ronosoft - Innovative Digital Solutions for Business Growth",
     description: "Expert web development, app creation, and 100% effective SEO strategies to skyrocket your online presence.",
     url: "https://push-startup-hub.vercel.app",
-    siteName: "Push Startup Hub",
+    siteName: "Ronosoft",
     images: [
       {
         url: "https://push-startup-hub.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Push Startup Hub - Digital Solutions",
+        alt: "Ronosoft - Digital Solutions",
       },
     ],
     locale: 'en_US',
@@ -67,7 +77,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@push_startup',
-    title: "Push Startup Hub - Innovative Digital Solutions",
+    title: "Ronosoft - Innovative Digital Solutions",
     description: "Expert web development, app creation, and 100% effective SEO strategies to skyrocket your online presence.",
     images: ['https://push-startup-hub.vercel.app/twitter-image.jpg'],
   },
@@ -97,7 +107,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${poppins.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -108,7 +118,7 @@ export default function RootLayout({ children }) {
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Push Startup Hub",
+              "name": "Ronosoft",
               "url": "https://push-startup-hub.vercel.app",
               "logo": "https://push-startup-hub.vercel.app/logo.png",
               "sameAs": [
@@ -132,8 +142,23 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
+
+        {/* TODO: i am not using the headless OTPless now but in leter i use this  */}
+        {/* <Script
+          id="otpless-sdk"
+          src="https://otpless.com/v3/headless.js"
+          data-appid="4nx4nff2tusvczxd1sp7"
+        ></Script> */}
+
+        <Script
+          id="otpless-sdk"
+          src="https://otpless.com/v3/headless.js"
+          data-appid="4nx4nff2tusvczxd1sp7"
+        ></Script>
+
       </head>
-      <body className="antialiased">
+      <body className={`antialiased ${inter.className}`}>
+
         <Navbar />
         <main>{children}</main>
         <Footer />

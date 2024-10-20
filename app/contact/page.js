@@ -49,7 +49,7 @@ export default function ContactPage() {
       ))}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse">
-          Get in Touch with Push Start-Up Hub
+          Get in Touch with Ronosoft
         </h1>
 
         <div className="mb-16">
@@ -77,8 +77,8 @@ export default function ContactPage() {
             ) : (
               <div className="flex flex-col md:flex-row justify-center items-center gap-8 max-w-4xl mx-auto animate-fadeIn">
                 {[
-                  { name: 'email', title: 'Email Us', content: 'contact@pushstartup.com' },
-                  { name: 'phone', title: 'Call Us', content: '+91 1234567890' }
+                  { name: 'email', title: 'Email Us', content: 'contact@ronosoft.com' },
+                  { name: 'phone', title: 'Call Us', content: '+91 7023941072' }
                 ].map((item) => (
                   <div key={item.name} className="flex items-center space-x-4 backdrop-blur-md bg-white/5 p-6 rounded-full shadow-xl transition-all duration-300 hover:shadow-2xl hover:scale-105">
                     <ContactIcon name={item.name} />

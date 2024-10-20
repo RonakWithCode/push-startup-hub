@@ -7,7 +7,7 @@ import { FaClock, FaTags } from 'react-icons/fa';
 import { getGuideIcon } from '../components/GuideIcon';
 
 export const metadata = {
-  title: "Startup Guides & Resources | Push Start-Up Hub",
+  title: "Startup Guides & Resources | Ronosoft",
   description: "Access our collection of comprehensive guides and resources designed to help startups and small businesses thrive.",
   openGraph: {
     url: 'https://pushstartup.com/guides',

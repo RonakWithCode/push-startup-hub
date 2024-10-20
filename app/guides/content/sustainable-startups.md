@@ -174,7 +174,7 @@ Integrating ESG principles into your startup's business model is no longer optio
 
 Remember, building a sustainable startup is a journey, not a destination. Start with the most material ESG factors for your business, set clear goals, and continuously improve your practices. The effort you invest in ESG integration will pay dividends in terms of investor appeal, customer loyalty, employee satisfaction, and overall business resilience.
 
-At Push Startup Hub, we're committed to supporting startups in their sustainability journey. Whether you're just starting to explore ESG or looking to take your sustainable practices to the next level, we're here to help. Reach out to us for personalized guidance on integrating ESG principles into your startup's strategy.
+At Ronosoft, we're committed to supporting startups in their sustainability journey. Whether you're just starting to explore ESG or looking to take your sustainable practices to the next level, we're here to help. Reach out to us for personalized guidance on integrating ESG principles into your startup's strategy.
 
 How is your startup approaching sustainability and ESG? What challenges have you faced, and what successes have you achieved? Share your experiences in the comments below—your insights could inspire fellow entrepreneurs on their ESG journey!
 
