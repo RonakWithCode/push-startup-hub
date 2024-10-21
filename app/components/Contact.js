@@ -1,9 +1,14 @@
 'use client'; // This is a client-side component
 import { useState } from 'react';
-import Image from 'next/image';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+// Metadata is now handled in the layout.js or page.js file
+export const metadata = {
+  title: 'Contact Us | Ronosoft',
+  description: 'Get in touch with Ronosoft for expert web development, app creation, and SEO services.',
+};
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -105,6 +110,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
+    // Implement your form submission logic here
   };
 
   // Custom styles for PhoneInput

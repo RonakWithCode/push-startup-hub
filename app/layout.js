@@ -3,9 +3,8 @@ import { Montserrat, Inter, Poppins } from 'next/font/google';
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Script from 'next/script';
 
-// Local fonts.
+// Local fonts
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -42,9 +41,7 @@ const montserrat = Montserrat({
 
 // Metadata
 export const metadata = {
-  metadataBase: new URL('https://push-startup-hub.vercel.app'),
   title: {
-
     default: "Ronosoft | Expert Web, App & SEO Solutions for Businesses",
     template: "%s | Ronosoft"
   },
@@ -79,7 +76,7 @@ export const metadata = {
     site: '@push_startup',
     title: "Ronosoft - Innovative Digital Solutions",
     description: "Expert web development, app creation, and 100% effective SEO strategies to skyrocket your online presence.",
-    images: ['https://push-startup-hub.vercel.app/twitter-image.jpg'],
+    images: ['https://push-startup-hub.vercel.app/twitter-image.png'],
   },
   robots: {
     index: true,
@@ -108,57 +105,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable}`}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Script id="schema-org" type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Ronosoft",
-              "url": "https://push-startup-hub.vercel.app",
-              "logo": "https://push-startup-hub.vercel.app/logo.png",
-              "sameAs": [
-                "https://www.instagram.com/push.startup/",
-                "https://x.com/push_startup"
-              ],
-              "description": "Expert web development, app creation, and SEO services with guaranteed results for businesses.",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Innovation Street",
-                "addressLocality": "Tech City",
-                "addressRegion": "TC",
-                "postalCode": "12345",
-                "addressCountry": "US"
-              },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+1-555-123-4567",
-                "contactType": "customer service"
-              }
-            }
-          `}
-        </Script>
-
-        {/* TODO: i am not using the headless OTPless now but in leter i use this  */}
-        {/* <Script
-          id="otpless-sdk"
-          src="https://otpless.com/v3/headless.js"
-          data-appid="4nx4nff2tusvczxd1sp7"
-        ></Script> */}
-
-        <Script
-          id="otpless-sdk"
-          src="https://otpless.com/v3/headless.js"
-          data-appid="4nx4nff2tusvczxd1sp7"
-        ></Script>
-
-      </head>
       <body className={`antialiased ${inter.className}`}>
-
         <Navbar />
         <main>{children}</main>
         <Footer />
